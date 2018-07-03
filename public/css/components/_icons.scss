@@ -1,0 +1,37 @@
+.heart{
+    @include drawIcon("♥", rgb(255, 0, 120));
+    font-size: 1.6em;
+    margin-left: $quart-space;
+    &:hover{
+        animation: beat 1s ease-in-out 1;
+    }
+}
+.smile{
+    @include drawIcon("☻", rgb(255, 225, 80));
+    font-size: 1.6em;
+    text-shadow: 0 0 4px rgb(0, 0, 0);
+    &:hover{
+        animation: roll 1s ease-in-out 1;
+    }
+}
+
+
+.star{
+    @include drawIcon("✯", rgb(252, 181, 49));
+
+    @for $num from 0 to 6 {
+        &-#{$num}{
+            &::before{
+                display: inline-block;
+                content: map-get($stars, $num);
+                color: rgb(252, 181, 49);
+                text-shadow: 1px 1px rgba(100, 0, 0, 0.5);
+            }
+            &::after{
+                display: inline-block;
+                content: map-get($stars, (5 - $num));
+                color: rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}

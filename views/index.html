@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Steve Van Essche</title>
+    <meta name="description" content="Curriculum Vitæ de Steve Van Essche">
+    <script src="https://use.fontawesome.com/da2739b993.js" async></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section id="profil">
+            <div class="container w-tier">
+                <picture>
+                    <source srcset="/assets/img/photo.jpg" media="(min-width: 840px)">
+                    <img src="/assets/img/photo_200x224.jpg" alt="Photo d'identité" class="profil-pic">
+                </picture>
+            </div>
+            <div class="container w-2tier align-vertical">
+                <div class="character">
+                    <h1>Steve Van Essche</h1>
+                    <h2 class="gray">Développeur</h2>
+                </div>
+                <ul class="horizontal-align w-80 auto">
+                    <li>
+                        <a href="https://codepen.io/SteveVE/" title="Codepen"><i class="fa fa-3x fa-codepen"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Steve-VE" title="Github"><i class="fa fa-3x fa-github-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/steve-van-essche/" title="Linkedin"><i class="fa fa-3x fa-linkedin-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://stevevanessche.tumblr.com/" title="Tumblr"><i class="fa fa-3x fa-tumblr-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/zombixel/" title="Facebook"><i class="fa fa-3x fa-facebook-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <nav>
+            
+        </nav>
+        <section id="skills" class="category">
+            <h2>Compétences</h2>
+            <div class="content">
+                {% if dev %}
+                <div class="column">
+                    <h3>Développement / Programmation</h3>
+                    <ul>
+                        <li>
+                            <h4>HTML<span class="star-4"></span></h4>
+                            <p>Mes pages HTML respectent parfaitement les normes W3C. Aussi, j'attache une grande importance à la sémantique et à l'acceccibilité de mes pages web.</p>
+                        </li>
+                        <li>
+                            <h4>CSS / SCSS<span class="star-4"></span></h4>
+                            <p>Depuis que j'ai appris l'existence du Sass/SCSS, je ne peux plus m'en passer <i class="heart"></i></p>
+                        </li>
+                        <li>
+                            <h4>Javascript<span class="star-4"></span></h4>
+                            <p>Le Javascript fait parti de mes langages favoris car il me permet de réaliser toutes les fantaisies qui me passent par la tête. À ce propos, n'hésitez pas à faire un tour sur mon profil <a href="https://codepen.io/SteveVE/">Codepen</a> !</p>
+                        </li>
+                        <li>
+                            <h4>PHP<span class="star-3"></span></h4>
+                            <p>PHP est le premier langage que j'ai appris dans le but de "dynamiser" mes pages web et de me faciliter le travail. Conjointement à PHP, j'ai appris à utiliser une base de données en MySQL.</p>
+                        </li>
+                        <li>
+                            <h4>Node.js<span class="star-2"></span></h4>
+                            <p>Node.js est une découverte relativement récente pour moi, mais il s'agit d'une technologie que j'apprécie particulièrement et dans laquelle je compte de perfectionner.<br>Ce site tourne d'ailleurs sur Node.js <i class="smile"></i></p>
+                        </li>
+                        <li>
+                            <h4>Processing<span class="star-4"></span></h4>
+                            <p>J'ai découvert Processing lors de mes études, et c'est avec ce langage que j'ai fait mes premiers pas en programmation. J'ai énormément appris en l'utilisant, et même s'il n'est pas très solicité dans le milieu professionnel, je me devais d'y faire mention.</p>
+                        </li>
+                        <li>
+                            <h4>Git<span class="star-3"></span></h4>
+                            <p>Cloner, pusher, réaliser des commits... Comment ai-je pu vivre aussi longtemps sans utiliser Git !? Même si j'utilise énormément le terminal, sur des projets solo mais aussi pour le swag, j'apprécie énormément travailler avec <a href="https://www.gitkraken.com/">GitKraken</a> en suivant la méthodologie de <a href="https://github.com/petervanderdoes/gitflow-avh/wiki">GitFlow</a>.</p>
+                        </li>
+                    </ul>
+                </div>
+                {% endif %}
+                {% if artist %}
+                <div class="column">
+                    <h3>Graphisme</h3>
+                    <ul>
+                        <li>
+                            <h4>Gimp<span class="star-4"></span></h4>
+                            <p>Il s'agit du logiciel avec lequel je travaille le plus pour le dessin ou la peinture numérique.</p>
+                        </li>
+                        <li>
+                            <h4>Photoshop<span class="star-3"></span></h4>
+                            <p>J'ai appris à utiliser Photoshop lors de mes études, et j'ai eu l'occasion pour concevoir des illustrations.</p>
+                        </li>
+                        <li>
+                            <h4>Illustrator<span class="star-2"></span></h4>
+                            <p>Dans le cadre d'un stage, j'ai dû réaliser des assets pour un projet de jeu vidéo. J'utilise aussi illustrator pour concevoir des icônes (pour le plaisir) ou pour la conception de logo.</p>
+                        </li>
+                        <li>
+                            <h4>Dessin traditionnel<span class="star-4"></span></h4>
+                            <p>Adopter une tablette graphique ne m'a pas fait lâcher le crayon pour autant.</p>
+                        </li>
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+        </section>
+        <section id="experiences" class="category">
+            <h2>Expériences</h2>
+            <div class="content">
+                {% if dev %}
+                <div class="column">
+                    <h3>Développeur</h3>
+                    <ul>
+                        <li>
+                            <h4>Master en Arts Numérique: Multimédia et Technologies</h4>
+                            <ul class="info">
+                                <li><a href="http://esapv.be/">ESAPV</a></li>
+                                <li>Rue de Nimy 7<br>7000 Mons</li>
+                                <li>2007 - 2012</li>
+                            </ul>
+                            <p>Cinq années d'étude au Carré des Arts</p>
+                        </li>
+                        <li>
+                            <h4>Formation Web Development</h4>
+                            <ul class="info">
+                                <li><a href="https://www.becode.org/">BeCode</a></li>
+                                <li>Quai Arthur Rimbaud 10 (<a href="http://www.quai10.be/">Quai10</a>)<br>Charleroi</li>
+                                <li>Janvier 2018 - Août 2018</li>
+                            </ul>
+                            <p>Formation de six mois où j'ai été amené à travailler sur différents projets, souvent en groupe.</p>
+                        </li>
+                    </ul>
+                </div>
+                {% endif %}
+                {% if artist %}
+                <div class="column">
+                    <h3>Graphisme / Illustration</h3>
+                    <ul>
+                        <li>
+                            <h4>Master en Arts Numérique: Multimédia et Technologies</h4>
+                            <ul class="info">
+                                <li><a href="http://esapv.be/">ESAPV</a></li>
+                                <li>Rue de Nimy 7<br>7000 Mons</li>
+                                <li>2007 - 2012</li>
+                            </ul>
+                            <p>Cinq années d'étude au Carré des Arts</p>
+                        </li>
+                        <li>
+                            <h4>Laboratorium</h4>
+                            <ul class="info">
+                                <li><a href="http://www.ulb.ac.be/">ULB</a></li>
+                                <li>Télétravail</li>
+                                <li>Octobre 2015 - Novembre 2015</li>
+                            </ul>
+                            <p>Réalisation des assets graphique pour le jeu de société éducatif <a href="http://stevevanessche.tumblr.com/post/148050483931/laboratorium-is-a-boardgame-made-by-nathalie">Laboratorium</a>, commandé par des professeurs de l'ULB.</p>
+                        </li>
+                        <li>
+                            <h4>Artiste 2D</h4>
+                            <ul class="info">
+                                <li><a href="http://monsterkid.be/oldSite/tinydrakkar/?page=games">Tiny Drakkar Studio</a></li>
+                                <li>Avenue Général Michel 1 (<a href="http://www.sace-asbl.be/">SACE</a>)<br>6000 Charleroi</li>
+                                <li>Juin 2013 - Novembre 2013</li>
+                            </ul>
+                            <p>Artiste 2D chez Tiny Drakkar Studio, chargé de la réalisation des assets graphiques sur le projet <a href="http://stevevanessche.tumblr.com/post/148100915306/fall-in-box-is-a-videogame-project-we-wanted-to">Fall in Box</a> et des <a href="http://stevevanessche.tumblr.com/post/133198261851/some-illustrations-and-characters-i-made-for-tiny">illustrations se rapportant à l'identité visuelle</a>du studio.</p>
+                        </li>
+                        <li>
+                            <h4>Artiste 2D</h4>
+                            <ul class="info">
+                                <li><a href="http://www.fishingcactus.com/">Fishing Cactus</a></li>
+                                <li>Avenue Guibal et Devillez 1<br>7000 Mons</li>
+                                <li>Mars 2012</li>
+                            </ul>
+                            <p>Réalisation d'illustration pour un projet de jeu web.</p>
+                        </li>
+                        <li>
+                            <h4>Artiste 2D</h4>
+                            <ul class="info">
+                                <li><a href="http://www.fishingcactus.com/">Fishing Cactus</a></li>
+                                <li>Avenue Guibal et Devillez 1<br>7000 Mons</li>
+                                <li>Mai 2011</li>
+                            </ul>
+                            <p>Réalisation d'asset vectoriel pour différents projets de jeux (Flash, mobile et éducatif)</p>
+                        </li>
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+        </section>
+        <section id="projects" class="category">
+                <h2>Projets</h2>
+
+        </section>
+    </main>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+<script src="/assets/js/functions.js"></script>
+<script src="/assets/js/class/HaloContainer.js"></script>
+<script src="/assets/js/script.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ['Roboto:400,700']
+        }
+    });
+</script>
+</body>
+</html>

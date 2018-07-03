@@ -1,0 +1,17 @@
+{
+  "name": "personnal_website",
+  "version": "1.0.0",
+  "description": "Just my personnal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Steve Van Essche",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5",
+    "nunjucks": "^3.1.3"
+  }
+}

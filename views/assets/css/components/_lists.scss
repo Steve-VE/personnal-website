@@ -1,0 +1,10 @@
+ul.horizontal-align{
+    padding: 0 12px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+
+    li{
+        display: inline-block;
+    }
+}

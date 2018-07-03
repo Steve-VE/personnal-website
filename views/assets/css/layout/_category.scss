@@ -1,0 +1,100 @@
+.category{
+    .content{
+        overflow: hidden;
+
+        @media #{$pc}{
+            display: flex;
+        }
+
+        .closed > * {
+            display: none;
+        }
+    }
+    h2, h3{
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+    h2{
+        margin: 0;
+        padding: $space;
+        font-size: 1.2em;
+        background-color: $color-darkest;
+    }
+    h3{
+        padding: $space;
+        font-size: 1em;
+        background-color: $color-dark;
+    }
+    
+    .column:first-child > h3{
+        border-left: 2px solid $color-darkest;
+    }
+    .column:last-child > h3{
+        border-right: 2px solid $color-darkest;
+    }
+
+    h4{
+        margin-bottom: $demi-space;
+        padding-bottom: $demi-space;
+        font-weight: bold;
+        border-bottom: 1px solid black;
+    }
+    p{
+        padding-bottom: $demi-space;
+        text-align: justify;
+    }
+
+    .column{
+        
+        @media #{$pc}{
+            width: 50%;
+        }
+        
+        ul{
+            overflow: hidden;
+            li{
+                padding: $space;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-top-width: 0;
+                border-bottom-width: 2px;
+                // box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+
+
+                &:nth-child(odd){
+                    text-align: left;
+                    background-color: rgba(white, 0.9);
+                    span[class^="star-"]{
+                        float: right;
+                    }
+                }
+                &:nth-child(even){
+                    text-align: right;
+                    background-color: rgba(white, 0.8);
+                    span[class^="star-"]{
+                        float: left;
+                    }
+                }
+
+                .star{
+                    margin: 0 $space;
+                }
+            }
+
+            .info{
+                
+                li{
+                    padding: $quart-space;
+                    padding-right: $demi-space;
+                    
+                    text-align: right;
+                    font-size: $min-font-size;
+                    
+                    border: none;
+                    border-right: 4px solid gray;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
