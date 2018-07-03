@@ -11,6 +11,7 @@ nunjucks.configure('views', {
 });
 
 server.use('/assets', express.static(__dirname + '/public'));
+server.use('/assets/js', express.static(__dirname + '/node_modules/zbx-javascript'));
 
 server.get('/', (req, res)=>{
     res.render("index.html", {
