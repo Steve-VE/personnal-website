@@ -14,39 +14,44 @@
 <body>
     <main>
         <section id="profil">
-            <div class="container w-tier">
-                <picture>
-                    <source srcset="/assets/img/photo.jpg" media="(min-width: 840px)">
-                    <img src="/assets/img/photo_200x224.jpg" alt="Photo d'identité" class="profil-pic">
-                </picture>
+            <div class="container">
+                <div class="profil-pic">
+                    <picture>
+                        <source srcset="/assets/img/photo.jpg" media="(min-width: 840px)">
+                        <img src="/assets/img/photo_200x224.jpg" alt="Photo d'identité">
+                    </picture>
+                </div>
             </div>
-            <div class="container w-2tier align-vertical">
+            <div class="container">
                 <div class="character">
                     <h1>Steve Van Essche</h1>
-                    <h2 class="gray">Développeur</h2>
+                    <nav>
+                        <ul>
+                            <li{% if (dev and artist) %} class="active"{% endif %}><h2><a href="/">Tout moi !</a></h2></li>
+                            <li{% if (dev and not artist) %} class="active"{% endif %}><h2><a href="/dev">Développeur</a></h2></li>
+                            <li{% if (not dev and artist) %} class="active"{% endif %}><h2><a href="/artist">Artiste 2D</a></h2></li>
+                        </ul>
+                    </nav>
                 </div>
-                <ul class="horizontal-align w-80 auto">
+                <ul class="social sticky-bottom">
                     <li>
-                        <a href="https://codepen.io/SteveVE/" title="Codepen"><i class="fa fa-3x fa-codepen"></i></a>
+                        <a href="https://codepen.io/SteveVE/" title="Codepen"><i class="fa fa-4x fa-codepen"></i></a>
                     </li>
                     <li>
-                        <a href="https://github.com/Steve-VE" title="Github"><i class="fa fa-3x fa-github-square"></i></a>
+                        <a href="https://github.com/Steve-VE" title="Github"><i class="fa fa-4x fa-github-square"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/steve-van-essche/" title="Linkedin"><i class="fa fa-3x fa-linkedin-square"></i></a>
+                        <a href="https://www.linkedin.com/in/steve-van-essche/" title="Linkedin"><i class="fa fa-4x fa-linkedin-square"></i></a>
                     </li>
                     <li>
-                        <a href="http://stevevanessche.tumblr.com/" title="Tumblr"><i class="fa fa-3x fa-tumblr-square"></i></a>
+                        <a href="http://stevevanessche.tumblr.com/" title="Tumblr"><i class="fa fa-4x fa-tumblr-square"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/zombixel/" title="Facebook"><i class="fa fa-3x fa-facebook-square"></i></a>
+                        <a href="https://www.facebook.com/zombixel/" title="Facebook"><i class="fa fa-4x fa-facebook-square"></i></a>
                     </li>
                 </ul>
             </div>
         </section>
-        <nav>
-            
-        </nav>
         <section id="skills" class="category">
             <h2>Compétences</h2>
             <div class="content">
@@ -124,7 +129,7 @@
                                 <li>Rue de Nimy 7<br>7000 Mons</li>
                                 <li>2007 - 2012</li>
                             </ul>
-                            <p>Cinq années d'étude au Carré des Arts</p>
+                            <p>Cinq années d'étude au Carré des Arts où j'obtiens un BAC puis un Master en Arts Numériques.<br>J'y ai appris les bases de la programmation, grâce à Processing et à l'Action Script, ainsi que les bases du développement web (HTML/CSS et un peu de PHP).</p>
                         </li>
                         <li>
                             <h4>Formation Web Development</h4>
@@ -144,29 +149,45 @@
                     <ul>
                         <li>
                             <h4>Master en Arts Numérique: Multimédia et Technologies</h4>
-                            <ul class="info">
-                                <li><a href="http://esapv.be/">ESAPV</a></li>
-                                <li>Rue de Nimy 7<br>7000 Mons</li>
-                                <li>2007 - 2012</li>
-                            </ul>
-                            <p>Cinq années d'étude au Carré des Arts</p>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="left">                                    
+                                        <a href="http://esapv.be/">ESAPV</a>
+                                    </div>
+                                    <div class="right">                                    
+                                        Rue de Nimy 7<br>7000 Mons<br>
+                                        2007 - 2012
+                                    </div>
+                                </div>
+                                <p>Cinq années d'étude au Carré des Arts dont la première en Dessin. En Arts Numériques, j'ai appris à utiliser des logiciels tels que Photoshop, Illustrator et InDesign.</p>
+                            </div>
                         </li>
                         <li>
                             <h4>Laboratorium</h4>
-                            <ul class="info">
-                                <li><a href="http://www.ulb.ac.be/">ULB</a></li>
-                                <li>Télétravail</li>
-                                <li>Octobre 2015 - Novembre 2015</li>
-                            </ul>
-                            <p>Réalisation des assets graphique pour le jeu de société éducatif <a href="http://stevevanessche.tumblr.com/post/148050483931/laboratorium-is-a-boardgame-made-by-nathalie">Laboratorium</a>, commandé par des professeurs de l'ULB.</p>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="left">                                    
+                                        <a href="http://www.ulb.ac.be/">ULB</a>
+                                    </div>
+                                    <div class="right">                                    
+                                        Télétravail<br>
+                                        Octobre 2015 - Novembre 2015
+                                    </div>
+                                </div>
+                                <p>Réalisation des assets graphique pour le jeu de société éducatif <a href="http://stevevanessche.tumblr.com/post/148050483931/laboratorium-is-a-boardgame-made-by-nathalie">Laboratorium</a>, commandé par des professeurs de l'ULB.</p>
+                            </div>
                         </li>
                         <li>
                             <h4>Artiste 2D</h4>
-                            <ul class="info">
-                                <li><a href="http://monsterkid.be/oldSite/tinydrakkar/?page=games">Tiny Drakkar Studio</a></li>
-                                <li>Avenue Général Michel 1 (<a href="http://www.sace-asbl.be/">SACE</a>)<br>6000 Charleroi</li>
-                                <li>Juin 2013 - Novembre 2013</li>
-                            </ul>
+                            <div class="info">
+                                <div class="left">                                    
+                                    <a href="http://monsterkid.be/oldSite/tinydrakkar/?page=games">Tiny Drakkar Studio</a>
+                                </div>
+                                <div class="right">                                    
+                                    Avenue Général Michel 1 (<a href="http://www.sace-asbl.be/">SACE</a>)<br>6000 Charleroi<br>
+                                    Juin 2013 - Novembre 2013
+                                </div>
+                            </div>
                             <p>Artiste 2D chez Tiny Drakkar Studio, chargé de la réalisation des assets graphiques sur le projet <a href="http://stevevanessche.tumblr.com/post/148100915306/fall-in-box-is-a-videogame-project-we-wanted-to">Fall in Box</a> et des <a href="http://stevevanessche.tumblr.com/post/133198261851/some-illustrations-and-characters-i-made-for-tiny">illustrations se rapportant à l'identité visuelle</a>du studio.</p>
                         </li>
                         <li>
@@ -176,7 +197,7 @@
                                 <li>Avenue Guibal et Devillez 1<br>7000 Mons</li>
                                 <li>Mars 2012</li>
                             </ul>
-                            <p>Réalisation d'illustration pour un projet de jeu web.</p>
+                            <p>Réalisation d'illustration sur le thème de la fantaisie pour un projet de jeu web.</p>
                         </li>
                         <li>
                             <h4>Artiste 2D</h4>
@@ -185,7 +206,7 @@
                                 <li>Avenue Guibal et Devillez 1<br>7000 Mons</li>
                                 <li>Mai 2011</li>
                             </ul>
-                            <p>Réalisation d'asset vectoriel pour différents projets de jeux (Flash, mobile et éducatif)</p>
+                            <p>Réalisation d'assets vectoriels pour différents projets de jeux (Flash, mobile et éducatif).</p>
                         </li>
                     </ul>
                 </div>
@@ -193,13 +214,52 @@
             </div>
         </section>
         <section id="projects" class="category">
-                <h2>Projets</h2>
-
+            <h2>Projets</h2>
+            <div class="content">
+                {% if dev %}
+                <div class="column">
+                    <h3>Développement</h3>
+                    <ul>
+                        <li>
+                            <h4>
+                                Green Light
+                                <span class="project-icon">
+                                    <picture>
+                                        <source srcset="/assets/img/icons/greenlight.png" media="(min-width: 840px)">
+                                        <img src="/assets/img/icons/greenlight_24x24.png" alt="Green Light">
+                                    </picture>
+                                </span>
+                            </h4>
+                            <p>Projet réalisé lors de mon Master en Arts Numérique, il s'agit d'un petit jeu vidéo jouable en réseau local.<br>Dans un monde où la lumière a quasiment disparue, deux équipes s'opposent : les Démons et les Humains. Les Humains ont pour but de protéger et d'entretenir l'Arbre, dernier lieu de vie dans ce monde. Les Démons ont pour but d'empêcher des Humains de récupérer les ressources nécessaires à la survie de l'Arbre.</p>
+                        </li>
+                    </ul>
+                </div>
+                {% endif %}
+                {% if artist %}
+                <div class="column">
+                    <h3>Arts</h3>
+                    <ul>
+                        <li>
+                            <h4>
+                                2014 - One Drawing by Day
+                                <span class="project-icon">
+                                    <picture>
+                                        <source srcset="/assets/img/icons/2014.png" media="(min-width: 840px)">
+                                        <img src="/assets/img/icons/2014_24x24.png" alt="2014 - One Drawing by Day">
+                                    </picture>
+                                </span>
+                            </h4>
+                            <p>Comme bonne résolution en 2014, j'avais pris la décision de faire un dessin par jour jusqu'à la fin de l'année. Défis réussi ! J'ai regroupé tous mes dessins sur un <a href="https://2014onedrawingbyday.tumblr.com/">Tumblr</a>.</p>
+                        </li>
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
         </section>
     </main>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script src="/assets/js/functions.js"></script>
-<script src="/assets/js/class/HaloContainer.js"></script>
+<!-- <script src="/assets/js/class/HaloContainer.js"></script> -->
 <script src="/assets/js/script.js"></script>
 <script>
     WebFont.load({

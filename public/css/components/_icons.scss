@@ -17,7 +17,7 @@
 
 
 .star{
-    @include drawIcon("✯", rgb(252, 181, 49));
+    @include drawIcon("★", rgb(252, 181, 49));
 
     @for $num from 0 to 6 {
         &-#{$num}{

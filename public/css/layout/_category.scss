@@ -27,12 +27,6 @@
         background-color: $color-dark;
     }
     
-    .column:first-child > h3{
-        border-left: 2px solid $color-darkest;
-    }
-    .column:last-child > h3{
-        border-right: 2px solid $color-darkest;
-    }
 
     h4{
         margin-bottom: $demi-space;
@@ -49,11 +43,21 @@
         
         @media #{$pc}{
             min-width: 50%;
+            flex-grow: 2;
+        }
+
+        &:first-child > h3, &:last-child > h3{
+            border-right: 2px solid $color-darkest;
         }
         
         ul{
-            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+
             li{
+                display: block;
+                width: 100%;
+                min-width: 300px;
                 padding: $space;
                 border: 1px solid rgba(255, 255, 255, 0.5);
                 border-top-width: 0;
@@ -64,6 +68,7 @@
                 &:nth-child(odd){
                     text-align: left;
                     background-color: rgba(white, 0.9);
+
                     span[class^="star-"]{
                         float: right;
                     }
@@ -71,6 +76,7 @@
                 &:nth-child(even){
                     text-align: right;
                     background-color: rgba(white, 0.8);
+
                     span[class^="star-"]{
                         float: left;
                     }
@@ -78,21 +84,6 @@
 
                 .star{
                     margin: 0 $space;
-                }
-            }
-
-            .info{
-                
-                li{
-                    padding: $quart-space;
-                    padding-right: $demi-space;
-                    
-                    text-align: right;
-                    font-size: $min-font-size;
-                    
-                    border: none;
-                    border-right: 4px solid gray;
-                    background-color: white;
                 }
             }
         }

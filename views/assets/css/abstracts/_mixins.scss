@@ -1,9 +1,0 @@
-@mixin drawIcon($icon, $color){
-    // position: relative;
-    position: absolute;
-    color: $color;
-    &::after{
-        display: inline-block;
-        content: $icon;
-    }
-}

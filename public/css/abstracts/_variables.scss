@@ -9,18 +9,20 @@ $colors: (
     gray: rgb(117, 118, 119),
     black: black
 );
-$color-darkest: rgb(0, 10, 20);
-$color-dark: rgb(6, 24, 43);
+$color-darkest: rgb(10, 25, 45);
+$color-dark: #0f345a;
 $color-red: rgb(190, 0, 25);
 $color-deep-red: rgb(75, 0, 25);
+$color-blue: rgb(0, 100, 255);
+$color-blue-light: rgb(0, 200, 255);
 
 $stars: (
     0: "",
-    1: "✯",
-    2: "✯✯",
-    3: "✯✯✯",
-    4: "✯✯✯✯",
-    5: "✯✯✯✯✯"
+    1: "★",
+    2: "★★",
+    3: "★★★",
+    4: "★★★★",
+    5: "★★★★★"
 );
 
 

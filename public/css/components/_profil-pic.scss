@@ -1,6 +1,18 @@
-img{
-    &.profil-pic{
+.profil-pic{
+    margin-right: $space;
+
+    img{
         width: 100%;
-        height: auto;
+    }
+
+    @media #{$smartphone-h}{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    @media #{$pc}{
+        border-radius: $demi-space;
     }
 }

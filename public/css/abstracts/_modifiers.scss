@@ -1,26 +1,6 @@
-$width-availible: 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100;
-
-.w{
-    @each $size in $width-availible {
-        &-#{$size}{
-            width: $size + 0%;
-        }
-    }
-    &-tier{
-        width: 33.33%;
-    }
-    &-2tier{
-        width: 66.66%;
-    }
-}
-
-.auto{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@each $color in $color-availible {
-    .#{$color}{
-        color: map-get($colors , $color);
+.sticky{
+    &-bottom{
+        position: absolute;
+        bottom: 0;
     }
 }

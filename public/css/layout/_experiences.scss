@@ -1,9 +1,25 @@
 #experiences{
     ul{
         li{
+            &:nth-child(even){
+                background-color: red;
+
+                .content{
+                    flex-direction: row-reverse;
+                }
+                .info{
+                    align-self: flex-end;
+                }
+            }
             p{
+                width: 50%;
                 padding: $demi-space 0 0;
             }
         }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
     }
 }
