@@ -1,0 +1,34 @@
+section{
+    position: relative;
+    padding: $double-space $space;
+    padding-bottom: $double-space * 2;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgb(230, 220, 220);
+    background-image: url('../img/paper_texture.png');
+    
+    h3{
+        display: inline-block;
+        padding: $quart-space $space;
+        
+        position: absolute;
+        top: -$space;
+        
+        background-color: rgb(230, 220, 220);
+        background-image: url('../img/paper_texture.png');
+        border-radius: $space;
+        border-top: 2px solid rgba(0, 0, 0, 0.3);
+    }
+}
+
+section{
+    &:nth-child(even){
+        h3{
+            left: $space;
+        }
+    }
+    &:nth-child(odd){
+        h3{
+            right: $space;
+        }
+    }
+}

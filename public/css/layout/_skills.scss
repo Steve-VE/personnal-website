@@ -1,0 +1,52 @@
+#skills{
+    /*h3{
+        &::before, &::after{
+            display: inline-block;
+            content: "";
+            width: 100vh;
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-$quart-space);
+            border-top: 2px solid black;
+        }
+        
+        &::before{ right: 100%; }
+        &::after{ left: 100%; }
+    }*/
+
+    background-image: 
+        url('../img/paper_texture.png'),
+        linear-gradient(0deg, $color-shadow 0%, transparent 25%),
+        linear-gradient(270deg, rgba(30, 100, 170, 0.3) 110px, rgba(30, 20, 80, 0.6) 111px, transparent 112px);
+
+
+    ul{
+        li{
+            border: 1px solid $color-shadow;
+            background-color: rgba(white, 0.8);
+            
+            
+            h4{
+                position: relative;
+                padding: $demi-space $space;
+                border-bottom: 1px solid $color-shadow;
+                background-color: rgba(white, 0.8);
+
+                span[class^="star-"]{
+                    // position: absolute;
+                    // left: 35%;
+                    // margin-left: $space;
+                    float: right;
+                    padding-left: $demi-space;
+                    border-left: 1px solid $color-shadow;
+                }
+            }
+
+            p{
+                text-align: justify;
+                padding: $demi-space $space $space;
+            }
+        }
+    }
+}

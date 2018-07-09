@@ -14,10 +14,11 @@ server.use('/assets', express.static(__dirname + '/public'));
 server.use('/assets/js', express.static(__dirname + '/node_modules/zbx-javascript'));
 
 server.get('/', (req, res)=>{
-    res.render("index.html", {
-        'dev': true,
-        'artist': true
-    });
+    // res.render("index.html", {
+    //     'dev': true,
+    //     'artist': true
+    // });
+    res.redirect('/dev');
 });
 server.get('/dev', (req, res)=>{
     res.render("index.html", {

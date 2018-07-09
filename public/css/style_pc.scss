@@ -1,0 +1,106 @@
+@import 'abstracts/_all';
+
+a{
+    transition: color 0.5s;
+    &:hover{
+        color: $color-red;
+    }
+}
+
+h1{
+    margin: $double-space auto;
+}
+h3{
+    font-size: 3em;
+}
+
+header{
+    &#profil{
+        .character{
+            width: 100%;
+            padding-bottom: $double-space*2;
+        }
+    }
+    .container{
+        width: 90%;
+        max-width: 980px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .switch-button, .social{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fa{
+        $delay: 0.5s;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        font-size: 3em;
+        transition: color $delay, transform $delay, text-shadow $delay;
+
+        &:hover{
+            // right: 1px;
+            // bottom: 2px;
+            transform: translate(-1px, -2px);
+            text-shadow: 2px 4px 4px $color-shadow;
+        }
+    }
+
+}
+
+section{
+    padding-top: $double-space * 2;
+
+    .content{
+        max-width: $max-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h3{
+        padding: $space $double-space;
+    }
+
+    &:nth-child(even){
+        h3{
+            left: 10%;
+        }
+    }
+    &:nth-child(odd){
+        h3{
+            right: 10%;
+        }
+    }
+}
+
+#skills{
+    ul{
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+    }
+    li{
+        width: 50%;
+    }
+}
+
+#experiences{
+    .column>ul{
+        &>li{
+            & > div{
+                width: 90%;
+                margin-left: 2%;
+                padding-left: $double-space;
+                padding-right: $double-space;
+            }
+        }
+    }
+}
+.info{
+    width: 10%;
+    min-width: 200px;
+}

@@ -15,6 +15,13 @@ $color-red: rgb(190, 0, 25);
 $color-deep-red: rgb(75, 0, 25);
 $color-blue: rgb(0, 100, 255);
 $color-blue-light: rgb(0, 200, 255);
+$color-shadow: rgba(rgb(45, 10, 90), 0.3);
+
+$font-main: 'Roboto', sans-serif;
+$font-title: 'Tangerine', monospace;
+$font-info: 'Sanchez', 'Courier New', Courier, monospace;
+
+$max-width: 980px;
 
 $stars: (
     0: "",

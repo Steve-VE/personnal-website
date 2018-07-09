@@ -1,35 +1,24 @@
 .info{
-    width: 50%;
-    height: ($space * 5);
+    width: 40%;
+    height: fit-content;
+    background-color: rgba(250, 245, 240, 0.9);
 
-    display: flex;
-    flex-direction: row;
+    margin-right: $demi-space;
+    padding: $space;
+    padding-left: $demi-space;
 
-    > div{
-        box-sizing: content-box;
-        height: 100%;
-        
-        display: inline-block;
-        padding: $quart-space;
-        
-        text-align: right;
-        font-size: $min-font-size;
-        background-color: white;
-        line-height: 1.4em;
-    }
-    
-    .left{
-        // width: 30%;
-        padding-right: $space;
-        padding-left: $space;
-        // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 10% 50%);
-        border-right: 4px solid gray;
-    }
-    .right{
-        width: 70%;
-        padding-right: $double-space;
-        padding-left: $demi-space;
-        // clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
-        text-align: left;
+    font-family: $font-info;
+    text-align: right;
+    line-height: 1.2em;
+
+    li{
+        padding: $demi-space 0;
+        border-bottom: 1px dashed $color-shadow;
+        &:first-child{
+            font-weight: bold;
+        }
+        &:last-child{
+            border-bottom: none;
+        }
     }
 }
