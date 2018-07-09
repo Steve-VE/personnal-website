@@ -1,10 +1,9 @@
+const port = require('./config').port;
+
 let express = require('express');
 let server = express();
 let nunjucks = require('nunjucks');
 
-
-// server.use('/public', express.static('/assets'));
-// server.use(nunjucks);
 nunjucks.configure('views', {
     autoescape: true,
     express: server
@@ -35,4 +34,5 @@ server.get('*', (req, res)=>{
     res.redirect('/');
 });
 
-server.listen(8088);
+server.listen(port, '127.0.0.1');
+console.log("-- Server's running on port " + port + ".");
