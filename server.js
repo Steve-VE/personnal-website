@@ -34,5 +34,5 @@ server.get('*', (req, res)=>{
     res.redirect('/');
 });
 
-server.listen(port, '127.0.0.1');
+server.listen(port);
 console.log("-- Server's running on port " + port + ".");
