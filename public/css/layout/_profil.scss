@@ -1,9 +1,8 @@
 #profil{
     width: 100%;
-    margin-top: 125px;
     padding-bottom: $double-space * 2;
 
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(230, 230, 230);
     background-image: linear-gradient(0deg, $color-shadow 0%, transparent 25%);
 
     .character{
@@ -29,13 +28,18 @@
             height: 100%;
             padding: $double-space 0;
 
-            color: $color-blue-light;
             border-radius: $demi-space;
-
-            background-color: $color-dark;
             
+            background-color: $color-dark;
+            a{
+                color: rgba(white, 0.5);
+                text-decoration: none;
+            }
+
             &.active{
-                color: white;
+                a{
+                    color: white;
+                }
                 background-color: $color-darkest;
                 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
             }
@@ -54,11 +58,6 @@
                 padding-right: $double-space;
                 text-align: right;
                 clip-path: polygon(100% 0, 55% 0, 45% 100%, 100% 100%);
-            }
-
-            a{
-                color: white;
-                text-decoration: none;
             }
         }
     }

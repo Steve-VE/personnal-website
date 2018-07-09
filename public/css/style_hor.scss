@@ -8,3 +8,13 @@ h2{
     font-size: 3em;
     font-family: $font-title;
 }
+
+.info{
+    width: 10%;
+    min-width: 200px;
+}
+
+#experiences{
+    padding-left: $space;
+    padding-right: $space;
+}

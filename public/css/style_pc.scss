@@ -20,6 +20,9 @@ header{
             width: 100%;
             padding-bottom: $double-space*2;
         }
+        .switch-button{
+            margin: ($double-space * 2) auto;
+        }
     }
     .container{
         width: 90%;
@@ -33,6 +36,7 @@ header{
         margin-left: auto;
         margin-right: auto;
     }
+    
 
     .fa{
         $delay: 0.5s;
@@ -43,8 +47,6 @@ header{
         transition: color $delay, transform $delay, text-shadow $delay;
 
         &:hover{
-            // right: 1px;
-            // bottom: 2px;
             transform: translate(-1px, -2px);
             text-shadow: 2px 4px 4px $color-shadow;
         }
@@ -56,6 +58,7 @@ section{
     padding-top: $double-space * 2;
 
     .content{
+        width: 90%;
         max-width: $max-width;
         margin-left: auto;
         margin-right: auto;
@@ -64,23 +67,19 @@ section{
     h3{
         padding: $space $double-space;
     }
-
-    &:nth-child(even){
-        h3{
-            left: 10%;
-        }
-    }
+    
     &:nth-child(odd){
         h3{
-            right: 10%;
+            float: left;
         }
     }
 }
 
 #skills{
+    background-image: url('../img/paper_texture.png');
+
     ul{
         display: flex;
-        // flex-direction: column;
         flex-wrap: wrap;
     }
     li{
@@ -89,6 +88,8 @@ section{
 }
 
 #experiences{
+    background-image: url('../img/paper_texture.png');
+
     .column>ul{
         &>li{
             & > div{
@@ -100,7 +101,7 @@ section{
         }
     }
 }
-.info{
-    width: 10%;
-    min-width: 200px;
+
+.space{
+    height: 25vh;
 }

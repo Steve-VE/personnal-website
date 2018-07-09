@@ -3,7 +3,13 @@ let haloContainer;
 window.onload = ()=>{
     console.log("Script loaded");
 
-    haloContainer = new HaloContainer(document.querySelector('body'));
+    haloContainer = new HaloContainer(
+        document.querySelectorAll('.space, footer'),
+        5 + Math.round(Math.random() * 10), 
+        {
+            'size': 1 + (Math.random() * 2),
+        }
+    );
     setInterval(update, 33);
     // let sections = document.querySelectorAll('#skills, #experiences, #projects');
     // for(let section of sections){

@@ -21,14 +21,11 @@ section{
 }
 
 section{
-    &:nth-child(even){
-        h3{
-            left: $space;
-        }
-    }
-    &:nth-child(odd){
-        h3{
-            right: $space;
+    @media screen and (max-width: $max-width){
+        &:nth-child(odd){
+            h3{
+                right: $space;
+            }
         }
     }
 }

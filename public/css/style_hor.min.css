@@ -1,2 +1,2 @@
-.sticky-bottom{position:absolute;bottom:0}@keyframes beat{0%,50%,100%{transform:scale(1);opacity:1}40%,60%{transform:scale(1.4);opacity:0.8}}@keyframes roll{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.social{padding:0 32px}h2{font-size:3em;font-family:"Tangerine",monospace}
+.sticky-bottom{position:absolute;bottom:0}@keyframes beat{0%,50%,100%{transform:scale(1);opacity:1}40%,60%{transform:scale(1.4);opacity:0.8}}@keyframes roll{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.social{padding:0 32px}h2{font-size:3em;font-family:"Tangerine",monospace}.info{width:10%;min-width:200px}#experiences{padding-left:16px;padding-right:16px}
 /*# sourceMappingURL=style_hor.min.css.map */

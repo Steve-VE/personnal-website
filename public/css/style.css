@@ -147,9 +147,8 @@ footer {
 
 #profil {
   width: 100%;
-  margin-top: 125px;
   padding-bottom: 64px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #e6e6e6;
   background-image: linear-gradient(0deg, rgba(45, 10, 90, 0.3) 0%, transparent 25%);
 }
 
@@ -173,15 +172,22 @@ footer {
   width: 100%;
   height: 100%;
   padding: 32px 0;
-  color: #00c8ff;
   border-radius: 8px;
   background-color: #0f345a;
 }
 
+#profil .switch-button .option a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
 #profil .switch-button .option.active {
-  color: white;
   background-color: #0a192d;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#profil .switch-button .option.active a {
+  color: white;
 }
 
 #profil .switch-button .option.left {
@@ -196,11 +202,6 @@ footer {
   padding-right: 32px;
   text-align: right;
   clip-path: polygon(100% 0, 55% 0, 45% 100%, 100% 100%);
-}
-
-#profil .switch-button .option a {
-  color: white;
-  text-decoration: none;
 }
 
 #profil ul {
@@ -228,12 +229,10 @@ section h3 {
   border-top: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-section:nth-child(even) h3 {
-  left: 16px;
-}
-
-section:nth-child(odd) h3 {
-  right: 16px;
+@media screen and (max-width: 980px) {
+  section:nth-child(odd) h3 {
+    right: 16px;
+  }
 }
 
 #skills {
@@ -438,5 +437,9 @@ section:nth-child(odd) h3 {
 .profil-pic img {
   width: 100%;
   height: auto;
+}
+
+.space {
+  height: 125px;
 }
 /*# sourceMappingURL=style.css.map */

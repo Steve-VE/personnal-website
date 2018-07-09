@@ -44,6 +44,10 @@ header#profil .character {
   padding-bottom: 64px;
 }
 
+header#profil .switch-button {
+  margin: 64px auto;
+}
+
 header .container {
   width: 90%;
   max-width: 980px;
@@ -75,6 +79,7 @@ section {
 }
 
 section .content {
+  width: 90%;
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
@@ -84,12 +89,12 @@ section h3 {
   padding: 16px 32px;
 }
 
-section:nth-child(even) h3 {
-  left: 10%;
+section:nth-child(odd) h3 {
+  float: left;
 }
 
-section:nth-child(odd) h3 {
-  right: 10%;
+#skills {
+  background-image: url("../img/paper_texture.png");
 }
 
 #skills ul {
@@ -101,6 +106,10 @@ section:nth-child(odd) h3 {
   width: 50%;
 }
 
+#experiences {
+  background-image: url("../img/paper_texture.png");
+}
+
 #experiences .column > ul > li > div {
   width: 90%;
   margin-left: 2%;
@@ -108,8 +117,7 @@ section:nth-child(odd) h3 {
   padding-right: 32px;
 }
 
-.info {
-  width: 10%;
-  min-width: 200px;
+.space {
+  height: 25vh;
 }
 /*# sourceMappingURL=style_pc.css.map */

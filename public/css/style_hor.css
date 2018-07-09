@@ -31,4 +31,14 @@ h2 {
   font-size: 3em;
   font-family: "Tangerine", monospace;
 }
+
+.info {
+  width: 10%;
+  min-width: 200px;
+}
+
+#experiences {
+  padding-left: 16px;
+  padding-right: 16px;
+}
 /*# sourceMappingURL=style_hor.css.map */
