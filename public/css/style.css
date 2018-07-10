@@ -420,6 +420,8 @@ section h3 {
 
 .info {
   width: 40%;
+  height: -moz-max-content;
+  height: max-content;
   height: fit-content;
   background-color: rgba(250, 245, 240, 0.9);
   margin-right: 8px;
