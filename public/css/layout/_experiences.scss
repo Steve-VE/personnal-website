@@ -28,6 +28,29 @@
                     padding-bottom: $space;
                     border-bottom: 1px solid rgba(black, 0.3);    
                 }
+
+                ul{
+                    margin: $demi-space 0;
+                    margin-left: $space;
+
+                    li{
+                        margin: $quart-space 0;
+                        
+                        &::before{
+                            content: '⚛';
+                            display: inline-block;
+                            padding-right: $demi-space;
+                            color: $color-blue;
+                        }
+                        
+                        &:nth-child(odd){
+                            &::before{
+                                content: '⚜';
+                                color: $color-red;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -141,6 +141,27 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+#experiences .column > ul > li > div ul {
+  margin: 8px 0;
+  margin-left: 16px;
+}
+
+#experiences .column > ul > li > div ul li {
+  margin: 4px 0;
+}
+
+#experiences .column > ul > li > div ul li::before {
+  content: '⚛';
+  display: inline-block;
+  padding-right: 8px;
+  color: #0064ff;
+}
+
+#experiences .column > ul > li > div ul li:nth-child(odd)::before {
+  content: '⚜';
+  color: #be0019;
+}
+
 footer {
   height: 128px;
 }
